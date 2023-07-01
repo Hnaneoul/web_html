@@ -1,0 +1,55 @@
+/* header */
+header {background-color: khaki;}
+header h1{}
+header h1 a{}
+header h1 a img{}
+/*header nav*/
+header nav{background-color: orange;}
+header nav ul{}
+header nav ul li{}
+header nav ul li a{}
+header .lnb{background-color: wheat;}
+header .lnb li{}
+header .lnb li a{}
+/* main */
+main {}
+main .breadcrumbs_bg{background-color: #f1f1f1;}
+main .breadcrumbs_bg .breadcrumbs{}
+main .breadcrumbs_bg .breadcrumbs a{}
+main .breadcrumbs_bg .breadcrumbs em{}
+/*main-content1*/
+main .content1{background-color: aqua;}
+main .content1 h1{}
+main .content1 h1 p{}
+/*main-content2*/
+main .b2_bg{background-color:#f1f1f1;}
+main .b2_bg .content2{}
+main .b2_bg .content2 p {}
+/*main-content3*/
+main .content3{background-color: tomato;}
+main .content3 h2{}
+main .content3 p{}
+/*main-content4*/
+main .c4_bg{background-color:#f1f1f1;}
+main .c4_bg .content4{}
+main .c4_bg .content4 .content4_1{}
+main .c4_bg .content4 .content4_1 h2{}
+main .c4_bg .content4 .content4_1 ul{}
+main .c4_bg .content4 .content4_1 ul li{}
+main .c4_bg .content4 .content4_2{}
+main .c4_bg .content4 .content4_2 h2{}
+main .c4_bg .content4 .content4_2 ul{}
+main .c4_bg .content4 .content4_2 ul li h3{}
+main .c4_bg .content4 .content4_2 ul li h3 p{}
+/* footer */
+footer {}
+footer .f_top{background-color: palevioletred;}
+footer .f_top .fnb{}
+footer .f_top .fnb li{}
+footer .f_top .fnb li a{}
+footer .f_top .site{}
+footer .f_top .site li{}
+footer .f_top .site li a{}
+footer .f_btm {background-color:powderblue}
+footer .f_btm address{}
+footer .f_btm address p{}
