@@ -1,0 +1,43 @@
+header {
+    background-color: aqua;
+    width:1200px; height:92px;
+    margin:0 auto;
+}
+header h1 {width:60px; height:70;
+    float: left;
+    margin:11px 0 0 20px;
+}
+header h1 a {}
+header h1 a img {width:100%;}
+header nav {background-color: aquamarine;
+    margin:39px 0 0 234px; float:left;}
+header nav ul {}
+header nav ul li {float:left;}
+header nav ul li a {
+    padding-right:40px;
+    font-size:1.2rem;}
+header nav ul li:last-child a {padding-right:0px;}
+header nav ul .active a {color:#36B4E5;}
+header .lnb {
+    background-color: burlywood;
+    float:right;
+    margin:39px 20px 0 0;}
+header .lnb li {float:left;
+margin-right:20px;}
+header .lnb li:last-child{margin-right:0;}
+header .lnb li a {font-size:1.2rem;}
+header .lnb li span {
+    display:block;
+    width:1px; height:13px;
+    background-color:#aaa;
+    margin-top:3px;
+}
+main {}
+main .breadcrubs_bg {}
+main .breadcrubs_bg .breadcrumbs {}
+main .breadcrubs_bg .breadcrumbs a {}
+main .breadcrubs_bg .breadcrumbs em {}
+main .content1 {}
+main .content1 h1 {}
+main .content1 h1 p {}
+main .b2_bg{}

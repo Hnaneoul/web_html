@@ -1,0 +1,128 @@
+/* header */
+header {
+    background-color: khaki;
+    width:1200px; height:92px;
+    margin:0 auto;
+}
+header h1{
+    width:60px; height:70px; /*이미지 부모 px*/
+    float:left;
+    margin:11px 0 0 20px;
+}
+header h1 a{}
+header h1 a img{
+    width:100%;
+} /* 이미지는 100%*/
+/* img태그는 인라인요소지만 px크기를 절대값으로 가진다. 그래서 부모요소의 크기가 변경되도 자동으로 따라오지 않기 때문에 width:100%속성으로 상대값으로 변경하여 부모의 px을 상대적으로 인식하게 하는 경우가 많다.*/
+/*header nav*/
+header nav{
+    background-color: orange;
+    margin:39px 0 0 234px;
+    float:left;
+}
+header nav ul{}
+header nav ul li{float:left;}
+header nav ul li a{
+    padding-right:40px; 
+    font-size:1.2rem;
+}
+header nav ul li:last-child a {padding-right:0;}
+/* 활성화 페이지 기준 active class 선택자 작성위치*/
+header nav ul .active a {color:#36B4E5;}
+header .lnb{
+    background-color: wheat;
+    float:right;
+    margin:39px 20px 0 0;
+    
+}
+header .lnb li{float:left;
+    margin-right:20px; } /* 모든 li에 반복적으로 들어간 margin 또는 padding값에서 마지막 여백값만 빼는 방법*/
+header .lnb li:last-child{margin-right:0;}
+header .lnb li a{font-size:1.2rem;}
+header .lnb li span{width:1px; height:13px; background-color:#aaa; display:block; margin-top:3px;
+}
+/* main */
+main {}
+main .breadcrumbs_bg{
+    background-color: #f1f1f1;
+    border:1px solid #aaa;
+    border-left:0; border-right:0;
+}
+main .breadcrumbs_bg .breadcrumbs{
+    background-color: aquamarine;
+    width: 1200px; height: 58px;
+    margin:0 auto;
+    /*정렬대상이 모두 인라인이고 한 방향 수평 정렬일 경우 정렬대상의 부모요소한테 text-aling을 사용한다.*/
+    text-align:right;
+    padding:23px 20px 0 0;
+}
+main .breadcrumbs_bg .breadcrumbs a{}
+main .breadcrumbs_bg .breadcrumbs em{font-weight: 700;}
+/*main-content1*/
+main .content1{
+    background-color: aqua;
+    width: 1200px; margin:0 auto;
+    padding:70px 0;
+    text-align:center;
+    letter-spacing: 0.02em;
+}
+main .content1 h1{font-size:2.074rem;
+margin-bottom:40px; font-weight:500; }
+main .content1 p{font-size:1.2rem;}
+/*main-content2*/
+main .b2_bg{
+    background-color:#f1f1f1;
+}
+main .b2_bg .content2{
+    width:1200px; margin:0 auto;
+    text-align: center; padding: 70px 0; }
+main .b2_bg .content2 p {font-size:1.2rem; letter-spacing:0.02em; line-height:35px;}
+/*main-content3*/
+main .content3{
+    background-color: tomato;
+    width:1200px; padding:70px 0;
+    text-align: center; margin:0 auto;
+    letter-spacing:0.02em;
+}
+main .content3 h2{font-size:2.074rem; font-weight: 500; color:#36B4E5;margin-bottom:50px;}
+main .content3 h2+p{font-size:1.728rem; line-height:45px }
+main .content3 p:nth-child(2){margin-bottom:50px;}
+main .c4_bg{background-color:#f1f1f1;}
+main .c4_bg .content4{}
+main .c4_bg .content4 .content4_1{}
+main .c4_bg .content4 .content4_1 h2{}
+main .c4_bg .content4 .content4_1 ul{}
+main .c4_bg .content4 .content4_1 ul li{}
+main .c4_bg .content4 .content4_2{}
+main .c4_bg .content4 .content4_2 h2{}
+main .c4_bg .content4 .content4_2 ul{}
+main .c4_bg .content4 .content4_2 ul li h3{}
+main .c4_bg .content4 .content4_2 ul li h3 p{}
+/* footer */
+footer {}
+footer .f_top{
+    background-color: palevioletred;
+    width: 1200px; height: 60px;
+    margin:0 auto; font-size:1.2rem;
+    letter-spacing:0.02em;
+}
+footer .f_top .fnb{float:left;}
+footer .f_top .fnb li{ background-color: #36B4E5;
+    float: left; margin:20px 0 0 20px;}
+footer .f_top .fnb li a{
+    font-weight:500; padding:10px; }
+footer .f_top .site{float:right;}
+footer .f_top .site li{
+    float:left; border:1px solid black; 
+    margin-right:-10px; padding:10px 20px; margin-top:12px;}
+footer .f_top .site li:last-child {margin:20px; margin-top:12px;}
+footer .f_top .site li a{}
+footer .f_btm {
+    background-color:powderblue;
+    width:1200px;  padding:70px 0 70px 0;
+    margin:0 auto; text-align:left;
+    
+}
+footer .f_btm address{margin-bottom: 50px;
+line-height: 40px;}
+footer .f_btm address p{}
