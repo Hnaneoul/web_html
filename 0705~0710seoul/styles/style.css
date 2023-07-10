@@ -1,0 +1,334 @@
+*{font-family: 'Noto Sans KR', sans-serif;}
+/*popup*/
+#top {
+    position:fixed; right:50px; bottom:50px;
+    width:34px; height: 34px;
+}
+#top img{width: 100%;}
+/* all layout*/ 
+header, 
+main .visual, 
+main .service, 
+main .bnr_bg .bnr,
+main .board, 
+main .field_info,
+main .news, 
+footer{
+    width:1152px; 
+    margin:0 auto; 
+    background-color: aqua;}
+/*header*/
+header {}
+/*header-h top*/
+header #h_top {background-color: yellow; height:48px;}
+header #h_top .left {background-color: lime; float:left;}
+header #h_top .left h1 {
+    width:110px; height:28px; 
+    float: left;  
+    padding-top:10px;}
+header #h_top .left h1 a{}
+header #h_top .left h1 img {width:100%; }
+header #h_top .left nav {float: left;}
+header #h_top .left nav ul {}
+header #h_top .left nav ul li {
+    float:left; 
+    margin-left:20px; /*세로글된거 가로로 바꾼단서 li에 플롯레프트 */}
+header #h_top .left nav ul li a {line-height: 48px;/*높이가 48이라서 중앙정렬키*/ letter-spacing:0.02em;}
+header #h_top .right {background-color: chocolate; float:right;}
+header #h_top .right li {
+    float:left; 
+    margin-left:20px; }
+header #h_top .right li:nth-child(1) {margin-left:0; /*필요한 위치만 마진들어가게 자른거*/}
+header #h_top .right li a{
+    line-height:48px; 
+    letter-spacing:0.02;}
+/*header-h_btm*/
+header #h_btm {
+    height: 119px; background-color: cadetblue;} /* 크기*/
+header #h_btm h1 {
+    width:150px; height:28px; 
+    float: left; 
+    margin-top:45.5px; background-color: blueviolet;}
+header #h_btm h1 a {}
+header #h_btm h1 img {width:100%; }
+header #h_btm #search_frm {
+    width: 369px; height:46px; /*크기*/
+    float: left;   
+    padding:10px 20px 0; /*검색어텍스트 + 검색버튼 테두리에서 거리재서 움긴것*/
+    margin:36.5px 0 0 231.5px; /* 가운데로 거리둔것*/
+    border:2px solid #1E6CB3; /*테두리색 크기*/ background-color:firebrick;}
+header #h_btm #search_frm fieldset {border:0;} /*테두리 없게 0*/
+header #h_btm #search_frm fieldset legend {display:none;}
+header #h_btm #search_frm fieldset #search {
+    float: left; 
+    width:calc(100% - 20px); /*검색창 길게 늘리는법 띄어쓰기 필수*/}
+header #h_btm #search_frm fieldset #search::placeholder/*플레이스홀더 태그주는방법* :: 콜론콜론 잘주기*/ {
+    letter-spacing: 0.02em;
+    color:#1e6cb3;}
+header #h_btm #search_frm fieldset #search_btn {
+    border:0;/*테두리없게*/ 
+    background:none; 
+    width: 20px; height: 20px; 
+    float:right;
+    cursor:pointer; /* 커서 가져다되면 딸각표시로 바뀌는방법*/}
+header #h_btm #search_frm fieldset #search_btn img {width:100%;}
+header #h_btm .right {
+    float:right; 
+    background-color: aquamarine;}
+header #h_btm .right #lang_frm{
+    text-align:right; /* ENGLISH , go 우측배치 */
+    margin-top:8px; }
+header #h_btm .right #lang_frm fieldset {border:0; }
+header #h_btm .right #lang_frm fieldset legend {display:none;}
+header #h_btm .right #lang_frm fieldset select {
+    font-size:0.813rem;
+    letter-spacing:-0.02em;
+    width:93px; padding:3px 0;
+    border:1px solid #1e6cb3}
+header #h_btm .right #lang_frm fieldset select option{}
+header #h_btm .right #lang_frm fieldset #lang_btn {
+    width:30px; height: 26px;
+    background-color: #1E6CB3;
+    color:#fff;
+    border:0;
+    cursor:pointer}
+header #h_btm .right .weather {float:right;}
+header #h_btm .right .weather .current_weather {padding:10px 0 10px 0;}
+header #h_btm .right .weather .current_weather em {
+    font-size:2.063rem;
+    font-weight:500;
+    letter-spacing:-0.02em;}
+header #h_btm .right .weather .current_dust {padding-bottom:8px; letter-spacing: 0.02em;}
+/*main*/
+main {}
+/*main-1 광고배너*/
+main .visual {
+    background-color: #1e6cb3;
+    overflow:hidden;}
+main .visual .left {
+    background-color:violet;
+    position: relative;  /*relative(부모)의 집 속에서 absolute(아이)가 집안에서 얼만큼놀껀지 한세트*/
+    width: 770px; height:350px;
+    float: left;
+}
+main .visual .left img{}
+main .visual .left .close {
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    padding:10px;
+    background-color: #1e6cb3;
+    color:#fff;
+    position:absolute; right:10px; bottom: 10px;
+    border-radius:5px;
+}
+main .visual .right {background-color: brown;
+    width: 360px; 
+    float:right;
+}
+main .visual .right .covid{
+    display: block;
+    position: relative;
+    width: 360px; height: 230px;
+    margin-bottom:10px;}
+main .visual .right .covid span{
+    background-color: cadetblue;
+    position:absolute;}
+main .visual .right .covid .date {}
+main .visual .right .covid .data0 {
+    right:22px; top:19px;}
+main .visual .right .covid .data1 {
+    top:80px;left:81px;}
+main .visual .right .covid .data2 {
+    top:80px; right:86px;}
+main .visual .right .covid .data3 {
+    left:58px; bottom:52px;}
+main .visual .right .covid .data4 {
+    right:163px; bottom:52px;}
+main .visual .right .covid .data5 {
+    right:53px; bottom:52px;}
+main .visual .right .covid img {}
+main .visual .right .traffic {width: 360px; height: 110px;}
+main .visual .right .traffic img {}
+/* 주요 서비스~새소식 제목 디자인 그룹*/
+/*정리후*/
+main section .title{
+    background-color: lightcoral;
+    padding:50px 0 10px; border-bottom:1px solid #aaa;
+    overflow: hidden; 
+}
+main section .title h2{
+    font-size:1.44rem; font-weight:500px;
+    letter-spacing:-0.02em;
+    float: left;
+}
+main section .title .site
+{float:right; border: 1px solid #aaa; padding:10px;
+}
+main section .title .more{
+    float: right; 
+}
+main section .title .more i{font-size:30px;
+}
+/*정리전 */
+main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title h2 .more {}
+main .board .festival .title{}
+main .board .festival .title h2{}
+main .board .festival .title h2 .more{}
+main .service_more .title{}
+main .service_more .title h2 {}
+main .field_info .title{}
+main .field_info .title h2{}
+main .news .title{}
+main .news .title h2{}
+/*main-2 주요서비스배너*/
+main .service {background-color: aquamarine; width:1152px; margin:0 auto;}
+main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .service .content {
+    padding:20px; overflow: hidden;
+}
+main .service .content a {
+    float: left; width:9.09%;
+    text-align: center; 
+}
+main .service .content a img {width: 60px; height: 60px; }
+main .service .content a span {
+    display: block; 
+    font-size: 0.833rem; letter-spacing: -0.02em;
+}
+/*main-3 배너*/
+main .bnr_bg{
+    background-color: #eff4f8;
+    padding:50px 0; overflow: hidden;}
+main .bnr_bg .bnr{}
+main .bnr_bg .bnr a{float:left; }
+main .bnr_bg .bnr a img{}
+/*main-4 게시판*/
+main .board {overflow: hidden;}
+/*main-4게시판 그룹모음*/
+main .board > div {
+    width:calc(33.33% - 22px);
+    float:left;
+}
+main .borad > div .title {height:90px;}
+main .board .event { }
+main .board .festival {margin:0 22px;}
+main .board .service {width:33.33%;}
+/*main -4게시판 개별내용*/
+main .board .event .title {overflow: hidden;}
+main .board .event .title h2 {float: left; margin-right:10px}
+main .board .event .title h2 .more {}
+main .board .event .content {}
+main .board .event .content a {}
+main .board .event .content a span{/* letter-spacing: 0,02em; float:left; margin: 0  0 10px 3px;  */}
+main .board .event .content a .administrative {color:#028AB6;}
+main .board .event .content a .environment {color:#599100;}
+main .board .event .content a .welfare {color:#D76000;}
+main .board .event .content a .house {color:#C35C3C;}
+main .board .event .content a .culture {color:#9B64D3;}
+/*이벤트신청 행사축제*/
+main .board .event .content,
+main .board .festival .content{margin-top:17px;}
+main .board .event .content a,
+main .board .festival .content a{
+    display: block; margin-bottom: 10px; overflow: hidden; }
+main .board .event .content a:last-child,
+main .board .festival .content a:last-child{
+    margin-bottom: 0px; }
+main .board .event .content a span,
+main .board .festival .content a span{}
+main .board .event .content a span:first-child,
+main .board .festival .content a span:first-child{margin-right:10px; float:left;}
+main .board .event .content a span:last-child,
+main .board .festival .content a span:last-child{
+    white-space: nowrap;  text-overflow: ellipsis;
+    overflow: hidden;
+    float:right; width:85%;
+    background-color: #C35C3C;
+}
+
+/*main-4게시판 그룹모음*/
+main .board .festival {background-color: indianred; }
+/*main -4게시판 개별내용*/
+main .board .festival .title{}
+main .board .festival .title h2{}
+main .board .festival .title h2 .more{}
+main .board .festival .content{}
+main .board .festival .content a{}
+main .board .festival .content a span{}
+main .board .festival .content a .environment{color: #599100;}
+main .board .festival .content a .economy{color: #069363;}
+main .board .festival .content a .culture{color: #9B64D3;}
+/*main-4게시판 그룹모음*/
+main .service_more { }
+/*main -4게시판 개별내용*/
+main .service_more .title{border:0;}
+main .service_more .title h2 {}
+main .service_more .content {
+    overflow: hidden;  padding:13px;  
+    height: 145px; background-color: #EFF4F8;
+}
+main .service_more .content a {
+    text-align: left; width: 50%; float: left;
+    margin-bottom:3%;
+}
+main .service_more .content a:nth-last-child(2),main .service_more .content a:last-child {
+    margin-bottom:0px;
+}
+/*main-5 분야정보*/
+main .field_info {background-color: mediumaquamarine; width:1152px; margin:0 auto; }
+main .field_info .title{}
+main .field_info .title h2{font-weight: 600;}
+main .field_info .content {overflow: hidden; padding:20px 40px; border-top:1px solid #000;}
+main .field_info .content a {float: left; width: 12.5%;  text-align: center;}
+main .field_info .content a img{}
+main .field_info .content a span{
+    display: block;
+    letter-spacing:-0.02em;}
+/*main-6 새소식*/
+main .news{background-color: lightgrey;}
+main .news .title{}
+main .news .title h2{}
+main .news .title .site{}
+main .news .content{overflow:hidden;}
+main .news .content  a {float: left; width: 25%; margin-top:24px; }
+main .news .content  a img{}
+main .news .content  a span{
+    margin-top:20px; line-height: 26px;
+    letter-spacing: -0.06em;}
+/*footer*/
+footer{}
+/* footer-f top*/
+footer .top{background-color:darkcyan;
+    border:1px solid #aaa; overflow: hidden;
+    border-left: 0; border-right:0; 
+    margin-top:33px;
+}
+footer .top .left{float: left;}
+footer .top .left a{}
+footer .top .right{float:right;}
+footer .top .right a{}
+footer .top .right a:nth-of-type(2){
+    background: white url(../img/icon_sns2/icon_set_sns_02.png) no-repeat; width:25px; height: 25px; display: inline-block; text-indent: -9999px;
+}
+footer .top .right a:first-child{
+background: white url(../img/icon_sns2/icon_set_sns_01.png) no-repeat;
+width: 25px; height: 25px; display: inline-block; text-indent:-9999px;
+}
+/* footer-f btm*/
+footer .btm {background-color:violet;}
+footer .btm .left{}
+footer .btm .left p{}
+footer .btm .left p img{}
+footer .btm .left address{}
+footer .btm .left address a{}
+footer .btm .right{}
+footer .btm .right a{}
+footer .btm .right a img{}
+
