@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- https://webty.tistory.com/150 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="">
+    <title>gradient</title>
+    <style>
+        div{height: 300px;}
+        .bg1{background: linear-gradient(
+            135deg, rgba(255,199,236,1), rgba(249,204,170,1) , rgba(184,252,188,1), rgba(167,240,255,1))};
+        .bg2{background: url(https://picsum.photos/id/20/1920);}
+        .bg3{
+            background: url(https://picsum.photos/1000/800);
+        }
+        .bg3 .gra{background: rgb(255,179,229);
+            background: linear-gradient(90deg, rgba(255,179,229,1) 0%, rgba(255,255,255,0) 100%);}
+        .bg4{background: url(https://picsum.photos/id/20/1920);}
+        .bg4 .gra{
+            background: rgb(255,179,229);
+            background: linear-gradient(90deg, rgba(255,179,229,1) 0%, rgba(255,255,255,0) 100%);}
+    </style>
+</head>
+<body>
+    <!-- 포토샵,일러스트레이터 = gradident = 정적인 색상 -->
+    <!-- css= gradient = 동적 색상(애니메이션) -->
+    <!--gradient animation CSS -->
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3">
+        <div class="gra"></div>
+    </div>
+    <div class="bg4">
+        <div class="gra"></div>
+    </div>
+</body>
+</html>
